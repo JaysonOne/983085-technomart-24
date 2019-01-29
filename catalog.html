@@ -2,33 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Техномарт</title>
   </head>
   <body>
   <!--Создаём вернюю шапку-------------------------------------------------->
     <header class="main-header">
       <h1 class="company-name">Техномарт</h1>
+      <p>Интернет магазин<br>
+        Строительных материалов<br>
+        И инструментов для ремонта
+      </p>
       <nav>
         <form class="log-out" action="index.html" method="post">
           <input type="button" name="log-out-button" value="РАВШАН ДЖАМШУТОВИЧ">
         </form>
-        <p>Интернет магазин<br>
-        Строительных материалов<br>
-        И инструментов для ремонта
-        </p>
- <!--Добавляем пользовательское меню----------------------------------------> 
+ <!--Добавляем информацию профиля меню----------------------------------------> 
         <ul class="user-menu">
           <li>
-              <a href="orders.html">
-                <span class="user-menu-orders">Мои заказы</span>
-              </a>
+            <a href="orders.html">
+              <span class="user-menu-orders">Мои заказы</span>
+            </a>
           </li>
           <li>
-              <a href="usermenu.html">
+             <a href="usermenu.html">
                 <span>Личный кабинет</span>
              </a>
           </li>
         </ul>
+ <!--Добавляем элементы которые ПОКА не можем определить-->
+            <span>Закладки</span>
+            <span>Корзина</span>
+            <span class="active">Оформить заказ</span>
+ <!--Добавляем контактную информацию----------------------------------->
+        <div class="contact-information">
+          <img src="phone.png" alt="Контактный телефон" width="40" height="300">
+          <span class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+        </div>           
  <!--Добавляем навигацию по сайту------------------------------------------->
         <ul class="site-navigation">
           <li> <a href="main.html">Главная</a></li>
@@ -39,22 +48,23 @@
           <li> <a href="delivery.html">Доставка</a></li>
           <li> <a href="contacts.html">Контакты</a></li>
         </ul>
-      </header>
-      <main>
+      </nav>
+    </header>
+    <main>
  <!--Добавляем меню "хлебные крошки"--------------------------------------=-->
-           <ul class="breadcrumbs">
-            <li> <a href="catalogue.html">Каталог</a></li>
-            <li> <a href="instruments.html">Инструменты</a></li>
-            <li class="breadcrumbs-current"> <a href="perforators.html">Перфораторы</a></li>
-          </ul>
+     <ul class="breadcrumbs">
+       <li> <a href="catalogue.html">Каталог</a></li>
+       <li> <a href="instruments.html">Инструменты</a></li>
+       <li class="breadcrumbs-current"> <a href="perforators.html">Перфораторы</a></li>
+      </ul>
   <!--Добавляем название страницы-----------------------------------------=-->        
-          <div>
-            <h2 class="page-name">ПЕРФОРАТОРЫ</h2>
-          </div>
+      <div>
+        <h2 class="page-name">ПЕРФОРАТОРЫ</h2>
+      </div>
   <!--Добавляем секцию фильтров товара---------------------------------------->       
-          <section class="filters">
-            <h3 class="filters-name">Фильтр:</h2>
-            <div class="filters-category">
+      <section class="filters">
+        <h2 class="filters-name">Фильтр:</h2>
+        <div class="filters-category">
               <span class="filters-category-name">Цена:</span>
               <!--Здесь будет форма-->
             </div>
@@ -201,7 +211,7 @@
                       <p class="footer-trademark">
                           2010-2019 Компания "Техномарт"<br>
                           Все права защищены
-                        </p>
+                      </p>
             
             <!--Добавляем меню футера----------------------------------------------->
                   <div class="footer-menu">
