@@ -14,21 +14,30 @@
          </p>
          <nav>
            <form class="main-search" action="index.html" method="post">
-             <input type="text" name="search">
+             <img src="img/svg-technomart/icon-search.svg" alt="search">
+            <input type="text" name="search">
            </form>
 <!--Добавляем пользовательское меню------------------------------------>
           <ul class="user-navigation">
             <li class="login-link">Войти</li>
             <li class="login-link">Регистрация</li>
           </ul>
-<!--Добавляем элементы которые ПОКА не можем определить-->
-          <span>Закладки</span>
-          <span>Корзина</span>
-          <span class="active">Оформить заказ</span>
+          <div class="user-menu">
+            <img src="/img/svg-technomart/icon-bookmark.svg" alt="bookmark"> 
+            <a href="bookmarks.html"><span class="u-menu">Закладки</span></a>
+          </div>
+          <div class="user-menu">
+            <img src="/img/svg-technomart/icon-cart.svg" alt="basket"> 
+            <a href="basket.html"> <span class="u-menu">Корзина:</span></a>
+          </div>
+          <div class="user-menu">
+            <a class="order active" href="order.html"> <span class="u-menu">Оформить заказ</span></a>
+          </div>
 <!--Добавляем контактную информацию----------------------------------->
         <div class="contact-information">
-          <img src="phone.png" alt="Контактный телефон" width="40" height="300">
-          <span class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
+            <img src="/img/svg-technomart/icon-phone.png" alt="phone">
+            <img src="/img/phone.png" alt="Контактный телефон">
+            <span class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
         </div>
 <!--Добавляем навигацию по сайту---------------------------->
         <ul class="site-navigation">
@@ -57,8 +66,8 @@
               </li>
 <!--Добавляем раздел Инструмент--------------------------------------->
               <li class="catalogue-instruments">
+                  <img src="img/instruments-icon.png" width="50" height="30" alt="Инструменты">
                   <h3>
-                    <img src="img/instruments-icon.png" width="50" height="30" alt="Инструменты">
                     <span class="products-section-name">Инструменты</span>
                   </h3>
                   <a class="button" href="catalogue-instruments.html">
@@ -67,8 +76,8 @@
               </li>
 <!--Добавляем раздел Техника------------------------------------------>
               <li class="catalogue-equipment">
+                <img src="img/equipment-icon.png" width="50" height="30" alt="Техника">
                 <h3>
-                  <img src="img/equipment-icon.png" width="50" height="30" alt="Техника">
                   <span class="products-section-name">Техника</span>
                 </h3>
                 <a class="button" href="catalogue-equipment.html">
@@ -77,8 +86,8 @@
               </li>
 <!--Добавляем раздел Скидки------------------------------------------->
               <li class="catalogue-discounts">
+                <img src="img/discounts-icon.png" width="50" height="30" alt="Скидки">
                 <h3>
-                  <img src="img/discounts-icon.png" width="50" height="30" alt="Скидки">
                   <span class="products-section-name">Скидки</span>
                 </h3>
                 <a class="button" href="catalogue-discounts.html">
@@ -87,8 +96,8 @@
               </li>
 <!--Добавляем раздел Доставка----------------------------------------->
               <li class="main-catalogue-delivery">
+                <img src="img/delivery-icon.png" width="50" height="30" alt="Доставка">
                 <h3>
-                  <img src="img/delivery-icon.png" width="50" height="30" alt="Доставка">
                   <span class="products-section-name">Доставка</span>
                 </h3>
                 <a class="button" href="catalogue-delivery.html">
@@ -112,20 +121,20 @@
 <!--Добавляем список Популярных товаров"----------------------------->
             <ul class="popular-list">
               <li class="popular-item">
-                <img src="img/bosh-bfg9000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 9000">
+                <img src="img/bosh-bfg9000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 9000">
                 <h3>
                   <span class="popular-item-name">Перфоратор BOSH</span>
                   <span class="popular-item-name">BFG 9000</span>
                 </h3>
                 <span class="old-price">32 500 P.</span>
                 <a class="button" href="BOSH-BFG9000.html">
-                  <img src="img/price-button-icon.png" width="20" height="5" alt="Актуальная цена">
+                  <img src="img/price-button-item.png" width="20" height="5" alt="Актуальная цена">
                   <span class="now-price">25500 P.</span>
                 </a>
               </li>
 
               <li class="popular-item">
-                <img src="img/bosh-bfg3000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
+                <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
                 <h3>
                   <span class="popular-item-name">Перфоратор BOSH</span>
                   <span class="popular-item-name">BFG 3000</span>
@@ -138,7 +147,7 @@
               </li>
 
               <li class="popular-item">
-                <img src="img/bosh-bfg6000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                 <h3>
                   <span class="popular-products-item">Перфоратор BOSH</span>
                   <span class="popular-products-item">BFG 6000</span>
@@ -151,7 +160,7 @@
               </li>
 
               <li class="popular-item">
-                <img src="img/bosh-bfg2000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 2000">
+                <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 2000">
                 <h3>
                   <span class="popular-products-item">Перфоратор BOSH</span>
                   <span class="popular-products-item">BFG 2000</span>
@@ -163,8 +172,42 @@
               </li>
             </ul>
             </section>
-
-<!--Позже необходимо добавить секцию "Популярные производители"------->
+            <section class="popular-manufacturers">    
+              <ul>
+                <li class="manufacturer">
+                  <img src="/img/logo/bosch-logo.png" alt="BOSH">
+                  <a href="catalog-bosh.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/makita-logo.png" alt="Makita">
+                  <a href="catalog-makita.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/DeWALT-logo.png" alt="DeWALT">
+                  <a href="catalog-DeWALT.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/interskol-logo.png" alt="Интерскол">
+                  <a href="catalog-interskol.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/Hitachi-logo.png" alt="Hitachi">
+                  <a href="catalog-hitachi.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/LG-logo.png" alt="LG">
+                  <a href="catalog-LG.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/AEG-logo.png" alt="AEG">
+                  <a href="catalog-AEG.html"></a>
+                </li>
+                <li class="manufacturer">
+                  <img src="/img/logo/Metabo-logo.png" alt="Metabo">
+                  <a href="catalog-metabo.html"></a>
+                </li>
+              </ul>
+            </section>
 <!--Позже необходимо добавить секцию "Сервисы"------------------------>
 <!--Добавляем секцию "О компании Техномарт"--------------------------->
             <section class="main-about-us">
@@ -204,7 +247,7 @@
               <h2>Контакты</h2>
               <span class="main-contacts-text">Вы можете забрать товар сами, <br>
               заехав в наш офис:</span>
-              <img src="map.jpg" alt="Карта">
+              <img src="/img/map.jpg" alt="Карта">
     <!--Здесь необходимо добавить форму для обратной связи---------->
               <a class="button" href="#">
                 <img src="img/find-us-icon.png" width="40" height="10" alt="Как нас найти">
@@ -256,9 +299,9 @@
   <!--Техномарт в социальных сетях---------------------------------->
           <div class="footer-social">
           <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
+          <li><a class="social-button" href="/img/svg-technomart/icon-vk.svg">Вконтакте</a></li>
+          <li><a class="social-button" href="/img/svg-technomart/icon-fb.svg">Фейсбук</a></li>
+          <li><a class="social-button" href="/img/svg-technomart/icon-insta.svg">Инстаграм</a></li>
           </ul>
         </div>
    <!--Обратная связь----------------------------------------------->

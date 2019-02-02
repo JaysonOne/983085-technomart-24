@@ -5,7 +5,7 @@
     <title>Техномарт</title>
   </head>
   <body>
-  <!--Создаём вернюю шапку-------------------------------------------------->
+  <!--Создаём верхнюю шапку-------------------------------------------------->
     <header class="main-header">
       <h1 class="company-name">Техномарт</h1>
       <p>Интернет магазин<br>
@@ -16,6 +16,21 @@
         <form class="log-out" action="index.html" method="post">
           <input type="button" name="log-out-button" value="РАВШАН ДЖАМШУТОВИЧ">
         </form>
+        <form class="main-search" action="index.html" method="post">
+          <img src="img/svg-technomart/icon-search.svg" alt="search">
+         <input type="text" name="search">
+        </form>
+        <div class="user-menu">
+          <img src="/img/svg-technomart/icon-bookmark.svg" alt="bookmark"> 
+          <a href="bookmarks.html"> <span class="u-menu">Закладки</span></a>
+        </div>
+        <div class="user-menu">
+          <img src="/img/svg-technomart/icon-cart.svg" alt="basket"> 
+          <a href="basket.html"> <span class="u-menu">Корзина:</span></a>
+        </div>
+        <div class="user-menu">
+          <a class="order active" href="order.html"> <span class="u-menu">Оформить заказ</span></a>
+        </div>
  <!--Добавляем информацию профиля меню----------------------------------------> 
         <ul class="user-menu">
           <li>
@@ -29,13 +44,10 @@
              </a>
           </li>
         </ul>
- <!--Добавляем элементы которые ПОКА не можем определить-->
-            <span>Закладки</span>
-            <span>Корзина</span>
-            <span class="active">Оформить заказ</span>
  <!--Добавляем контактную информацию----------------------------------->
         <div class="contact-information">
-          <img src="phone.png" alt="Контактный телефон" width="40" height="300">
+          <img src="/img/svg-technomart/icon-phone.png" alt="phone">
+          <img src="/img/phone.png" alt="Контактный телефон">
           <span class="adress">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</span>
         </div>           
  <!--Добавляем навигацию по сайту------------------------------------------->
@@ -69,7 +81,7 @@
               <!--Здесь будет форма-->
             </div>
             <div class="filters-category">
-              <span class="filters-category-name">Производители:</span>
+              <span class="filters-category-manufacturers">Производители:</span>
               <!--Здесь будет форма-->
             </div>              
             <div class="filters-category">
@@ -83,7 +95,7 @@
             <ul class="catalog-list">
                 
                 <li class="catalog-item">
-                    <img src="img/bosh-bfg3000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
+                    <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
                     <h3>                 
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 3000</span>
@@ -96,7 +108,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/bosh-bfg6000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                    <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                     
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 6000</span>
@@ -109,7 +121,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/new-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                    <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                      
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 2000</span>
@@ -121,7 +133,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/bosh-bfg3000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
+                    <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
                     <h3>                 
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 3000</span>
@@ -134,7 +146,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/bosh-bfg6000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                    <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                     
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 6000</span>
@@ -147,7 +159,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/new-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                    <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                      
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 2000</span>
@@ -159,7 +171,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/bosh-bfg3000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
+                    <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
                     <h3>                 
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 3000</span>
@@ -172,7 +184,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/bosh-bfg6000-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                    <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                     
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 6000</span>
@@ -185,7 +197,7 @@
                 </li>
                 
                 <li class="catalog-item">
-                    <img src="img/new-icon.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
+                    <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                      
                       <span class="catalog-item-name">Перфоратор BOSH</span>
                       <span class="catalog-item-name">BFG 2000</span>
@@ -197,9 +209,20 @@
                 </li>
               </ul>
           </section>
+          <section class="section-info">
+            <h2 class="section-info-name">
+              Пара слов о перфораторах
+            </h2>
+            <p class="section-info-body">
+              Перфоратор- универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.<br>
+              В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            </p>
+          </section>
         </main>
           <!--Добавляем футер------------------------------------------------------->
           <footer class="main-footer">
+              
               <!--Защита прав Техномарта-------------------------------------------->
             
                       <p class="footer-contacts">
@@ -241,10 +264,10 @@
               <!--Техномарт в социальных сетях---------------------------------->
                       <div class="footer-social">
                       <ul>
-                      <li><a class="social-button" href="#">Вконтакте</a></li>
-                      <li><a class="social-button" href="#">Фейсбук</a></li>
-                      <li><a class="social-button" href="#">Инстаграм</a></li>
-                      </ul>
+                        <li><a class="social-button" href="/img/svg-technomart/icon-vk.svg">Вконтакте</a></li>
+                        <li><a class="social-button" href="/img/svg-technomart/icon-fb.svg">Фейсбук</a></li>
+                        <li><a class="social-button" href="/img/svg-technomart/icon-insta.svg">Инстаграм</a></li>
+                        </ul>
                     </div>
                <!--Обратная связь----------------------------------------------->
                     <p class="footer-feedback">Обратная связь: <br>
