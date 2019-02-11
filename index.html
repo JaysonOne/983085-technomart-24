@@ -14,7 +14,7 @@
          </p>
          <nav>
            <form class="main-search" action="index.html" method="post">
-             <img src="img/svg-technomart/icon-search.svg" alt="search">
+             <img src="img/svg-technomart/icon-search.svg" width="30" height="10" alt="search">
             <input type="text" name="search">
            </form>
 <!--Добавляем пользовательское меню------------------------------------>
@@ -23,11 +23,11 @@
             <li class="login-link">Регистрация</li>
           </ul>
           <div class="user-menu">
-            <img src="/img/svg-technomart/icon-bookmark.svg" alt="bookmark"> 
+            <img src="/img/svg-technomart/icon-bookmark.svg" width="10" height="10" alt="bookmark"> 
             <a href="bookmarks.html"><span class="u-menu">Закладки</span></a>
           </div>
           <div class="user-menu">
-            <img src="/img/svg-technomart/icon-cart.svg" alt="basket"> 
+            <img src="/img/svg-technomart/icon-cart.svg" width="10" height="10" alt="basket"> 
             <a href="basket.html"> <span class="u-menu">Корзина:</span></a>
           </div>
           <div class="user-menu">
@@ -208,8 +208,36 @@
                 </li>
               </ul>
             </section>
-<!--Позже необходимо добавить секцию "Сервисы"------------------------>
-<!--Добавляем секцию "О компании Техномарт"--------------------------->
+<!--Добавляем секцию "Сервисы"--------------------------------------------------------------->
+            <section class="services">
+              <h2>Сервисы</h2>
+              <p>Хороший интернет-магазин отличается от плохого не только ценами! <br>
+                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+              </p>
+              <ul class="services-menu">
+                <li class="services-button">
+                  <span>Доставка</span> 
+                  <a href="delivery.html"></a>
+                </li>
+                <li class="services-button">
+                  <span>Гарантия</span>
+                  <a href="warranty.html"></a>                
+                </li>
+                <li class="services-button">
+                  <span>Кредит</span>
+                  <a href="credit.html"></a>
+                </li>
+              </ul>
+              <p>
+                <span class="delivery-name">Доставка</span><br>
+                Мы с удовольствием доставим ваш товар прямо<br> 
+                к вашему подъезду совершенно бесплатно!<br>
+                Ведь мы неплохо заработаем,<br> 
+                поднимая его на ваш этаж!<br>
+              </p>
+              <img src="/img/Layer_auto.png" alt="логотип доставки" width="470" height="260" >
+            </section>
+<!--Добавляем секцию "О компании Техномарт"------------------------------------------------->
             <section class="main-about-us">
               <h2>Компания «Техномарт»</h2>
               <p>Настоящий мужской шопинг начинается здесь! огомный выбор товаров для ремонта и <br>
@@ -244,16 +272,26 @@
               </section>
 <!--Добавляем секцию "Контакты"------------------------------------>
               <section class="main-contacts">
-              <h2>Контакты</h2>
-              <span class="main-contacts-text">Вы можете забрать товар сами, <br>
-              заехав в наш офис:</span>
-              <img src="/img/map.jpg" alt="Карта">
-    <!--Здесь необходимо добавить форму для обратной связи---------->
-              <a class="button" href="#">
+                <h2>Контакты</h2>
+                <span class="main-contacts-text">Вы можете забрать товар сами, <br>
+                заехав в наш офис:</span>
+                <a href="/img/fullmap.jpg"><img src="/img/map.jpg" alt="Карта"></a> 
+                <a class="button" href="#">
                 <img src="img/find-us-icon.png" width="40" height="10" alt="Как нас найти">
                 <span class="about-company-bottom-button">Заблудились? Напишите нам!
                 </span>
-              </a>
+                </a>
+                <div class="write-us visually-hidden">
+                  <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">                
+                    <label for="name-field">Ваше имя:</label>
+                    <input type="text" name="username" value="Имя Фамилия" id="name-field">
+                    <label for="male-field">Ваш e-mail:</label>
+                    <input type="text" name="e-mail" value="email@example.com" id="male-field">
+                    <label for="letter-field">Текст письма:</label>
+                    <input type="text" name="letter" value="В свободной форме" id="letter-field">
+                    <input type="submit" name="send" value="Отправить">
+                  </form>
+                </div>
             </section>
         </main>
   <!--Добавляем футер------------------------------------------------>
@@ -269,7 +307,7 @@
           <p class="footer-trademark">
               2010-2019 Компания "Техномарт"<br>
               Все права защищены
-            </p>
+          </p>
 
 <!--Добавляем нижнее меню---------------------------------------------->
       <div class="footer-menu">

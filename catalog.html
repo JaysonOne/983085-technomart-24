@@ -74,39 +74,66 @@
         <h2 class="page-name">ПЕРФОРАТОРЫ</h2>
       </div>
   <!--Добавляем секцию фильтров товара---------------------------------------->       
-      <section class="filters">
-        <h2 class="filters-name">Фильтр:</h2>
-        <div class="filters-category">
-              <span class="filters-category-name">Цена:</span>
-              <!--Здесь будет форма-->
-            </div>
-            <div class="filters-category">
-              <span class="filters-category-manufacturers">Производители:</span>
-              <!--Здесь будет форма-->
-            </div>              
-            <div class="filters-category">
-                <span class="filters-category-name">Питание:</span>
-                <!--Здесь будет форма-->
-              </div>     
-          </section>
+      <section class="filter">
+        <h2 class="filter-name">Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li class="filter-manufacturers-option">
+                <input type="checkbox" name="manufacturers" class="filter-chekbox" checked id="filter-bosh">
+                <label for="filter-bosh">BOSH</label> 
+              </li>
+              <li class="filter-manufacturers-option">
+                <input type="checkbox" name="manufacturers" class="filter-chekbox" id="filter-interskol">
+                <label for="filter-interskol">ИНТЕРСКОЛ</label> 
+              </li>
+              <li class="filter-manufacturers-option">
+                <input type="checkbox" name="manufacturers" class="filter-chekbox" checked id="filter-makita">
+                <label for="filter-makita">MAKITA</label>
+              </li>
+              <li class="filter-manufacturers-option">
+                <input type="checkbox" name="manufacturers" class="filter-chekbox" id="filter-dewalt">
+                <label for="filter-dewalt">DEWALT</label>
+              </li>
+              <li class="filter-manufacturers-option">
+                <input type="checkbox" name="manufacturers" class="filter-chekbox" id="filter-hitachi">
+                <label for="filter-hitachi">HITACHI</label>
+              </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li class="filter-supply-option">
+                <input type="radio" name="supply" id="filter-supply-battery" name="battery-supply">
+                <label for="filter-supply-battery">Аккумуляторные</label>
+              </li>
+              <li class="filter-supply-option">
+                <input type="radio" name="supply" id="filter-supply-grid" name="grid-supply">
+                <label for="filter-supply-grid">Сетевые</label>
+             </li>
+            </ul>
+         </fieldset>
+         <button type="submit" class="filter-button"></button>
+        </form>
+      </section>
   <!--Добавляем каталог товаров---------------------------------------------------------------------------------->
           <section class="catalogue-perforators">
             <h3 class="visually-hidden">Список перфораторов</h3>
             <ul class="catalog-list">
-                
-                <li class="catalog-item">
-                    <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
-                    <h3>                 
-                      <span class="catalog-item-name">Перфоратор BOSH</span>
-                      <span class="catalog-item-name">BFG 3000</span>
-                    </h3>
-                    <span class="old-price">22 500 P.</span>
-                    <a class="button" href="BOSH-BFG3000.html">
-                      <img src="img/price-button-icon.png" width="20" height="5" alt="Актуальная цена">
-                      <span class="now-price">15500 P.</span>
-                    </a>
+              <li class="catalog-item">
+                <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
+                  <h3>                 
+                    <span class="catalog-item-name">Перфоратор BOSH</span>
+                    <span class="catalog-item-name">BFG 3000</span>
+                  </h3>
+                  <span class="old-price">22 500 P.</span>
+                  <a class="button" href="BOSH-BFG3000.html">
+                    <img src="img/price-button-icon.png" width="20" height="5" alt="Актуальная цена">
+                    <span class="now-price">15500 P.</span>
+                  </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                     
@@ -119,7 +146,6 @@
                       <span class="now-price">25500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                      
@@ -131,7 +157,6 @@
                       <span class="now-price">12500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
                     <h3>                 
@@ -144,7 +169,6 @@
                       <span class="now-price">15500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                     
@@ -157,7 +181,6 @@
                       <span class="now-price">25500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                      
@@ -169,7 +192,6 @@
                       <span class="now-price">12500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg3000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 3000">
                     <h3>                 
@@ -182,7 +204,6 @@
                       <span class="now-price">15500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg6000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                     
@@ -195,7 +216,6 @@
                       <span class="now-price">25500 P.</span>
                     </a>
                 </li>
-                
                 <li class="catalog-item">
                     <img src="img/bosh-bfg2000-item.png" width="40" height="40" alt="Перфоратор BOSH BFG 6000">
                     <h3>                      
@@ -208,6 +228,16 @@
                     </a>
                 </li>
               </ul>
+              <div class="to-basket visually-hidden">
+                  <span class="add-product">Товар добавлен в корзину!</span>
+                  <img src="/img/svg-technomart/chekmark.svg" alt="product-added">
+                  <form action="#" method="get" class="to-basket">                
+                    <input type="submit" value="Оформить заказ">
+                  </form>
+                  <form action="#" method="post" class="to-basket">                
+                    <input type="button" value="Продолжить покупки">
+                  </form>
+                </div>
           </section>
           <section class="section-info">
             <h2 class="section-info-name">
@@ -271,13 +301,13 @@
                     </div>
                <!--Обратная связь----------------------------------------------->
                     <p class="footer-feedback">Обратная связь: <br>
-                    <a class="button" href="https://mail@htmlacademy.ru">
+                      <a class="button" href="https://mail@htmlacademy.ru">
                       mail@htmlacademy.ru</a>
                     </p>
                <!--Защита прав htmlacademy------------------------------------->
                     <p class="footer-copyright">
-                    <p>Разработано - <br>
-                    <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
+                      Разработано - <br>
+                      <a class="button" href="https://htmlacademy.ru">htmlacademy.ru</a>
                     </p>
                   </footer>
             
