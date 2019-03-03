@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <!--Создаём верхнюю шапку-------------------------------------------------->
@@ -20,11 +24,11 @@
           <img src="img/svg-technomart/icon-search.svg" alt="search">
          <input type="text" name="search">
         </form>
-        <div class="user-menu">
+        <div class="user-menu-bookmark">
           <img src="/img/svg-technomart/icon-bookmark.svg" alt="bookmark"> 
           <a href="bookmarks.html"> <span class="u-menu">Закладки</span></a>
         </div>
-        <div class="user-menu">
+        <div class="user-menu-basket">
           <img src="/img/svg-technomart/icon-cart.svg" alt="basket"> 
           <a href="basket.html"> <span class="u-menu">Корзина:</span></a>
         </div>
@@ -79,7 +83,7 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Производители:</legend>
-            <ul>
+            <ul class="filter-manufacturers">
               <li class="filter-manufacturers-option">
                 <input type="checkbox" name="manufacturers" class="filter-chekbox" checked id="filter-bosh">
                 <label for="filter-bosh">BOSH</label> 
@@ -104,7 +108,7 @@
         </fieldset>
         <fieldset>
             <legend>Питание:</legend>
-            <ul>
+            <ul class="supply">
               <li class="filter-supply-option">
                 <input type="radio" name="supply" id="filter-supply-battery" name="battery-supply">
                 <label for="filter-supply-battery">Аккумуляторные</label>
@@ -293,7 +297,7 @@
                   </div>
               <!--Техномарт в социальных сетях---------------------------------->
                       <div class="footer-social">
-                      <ul>
+                      <ul class="social">
                         <li><a class="social-button" href="/img/svg-technomart/icon-vk.svg">Вконтакте</a></li>
                         <li><a class="social-button" href="/img/svg-technomart/icon-fb.svg">Фейсбук</a></li>
                         <li><a class="social-button" href="/img/svg-technomart/icon-insta.svg">Инстаграм</a></li>
@@ -311,4 +315,4 @@
                     </p>
                   </footer>
             
-    </body>
+  </body>

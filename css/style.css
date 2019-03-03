@@ -1,0 +1,718 @@
+/*Убираем дефолтные настройки браузера и выставляем настройки характерные для большинства текста на странице*/
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Cuprum Regular", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 600;
+    color: black;
+    
+    background-color: white;
+    background-repeat: no-repeat; 
+}
+body ul {
+    padding: 0;
+    margin: 0;
+}
+
+.main-header {
+    min-height: 320px;
+    margin-bottom: 75px;
+    border: 1px solid black;
+    background-color: #f4f7f9;
+}
+
+.clearfix {
+    clear: both;
+    margin-bottom: 25px;
+}
+
+.container {
+    font-size: 0;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.contact-information {
+    float: left;
+    width: 270px;
+    min-height: 63px;
+}
+
+.for-border {
+    border: 3px solid #ffffff;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 11px;
+    padding-right: 52px;
+    position: absolute;
+    width: 221px;
+}
+
+
+/*Убираем подчёркивание у всех ссылок на странице*/
+a {
+    text-decoration: none;
+}
+
+.user-login {
+    height: 158px;
+}
+
+/*Выставляем параметры текста для слогана в шапке главной страницы*/
+.motto {
+    width: 196px;
+    height: 60px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: italic;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    color: #ee3643;
+    margin: 0;
+    position: absolute;   
+}
+
+/*Устанавливаем апарметры для текста в пользовательском меню*/
+.user-menu {
+    font-size: 17px;
+    line-height: 42px;
+    color: #ffffff;
+    display: flex;
+    width: 940px;
+    flex-direction: row;
+    padding: 0;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.user-menu-container {
+    position: relative;
+    background-color: #293449;
+    width: 100%;
+    height: 42px;
+}
+
+.user-menu-order {
+    background-color: #63a63e;
+}
+.user-menu-order a:hover {
+    background-color: #5fbb2d;    
+}
+
+/*Убираем значки маркеров перед элементами списков, для всех списков на странице*/
+.user-login,
+.user-menu,
+.site-navigation,
+.products-list,
+.popular-list,
+.popular-manufacturers,
+.services-menu,
+.delivery-list,
+.footer-menu-main,
+.footer-menu-catalogue,
+.social,
+.supply,
+.filter-manufacturers,
+.breadcrumbs {
+    list-style: none;
+}
+
+/*Устанавливаем параметры текста для логин-меню*/
+.user-login a {
+    font-size: 21px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/*Устанавливаем параметры текста для адреса компании в шапке сайта*/
+.adress {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #32425c;
+    
+    background-color: #f4f7f9;
+}
+
+/*Устанавливаем параметры текста для телефона омпании на главной странице*/
+.phone {
+    font-size: 21px;
+    line-height: 21px;
+    text-align: left;
+    color: #ee3643;
+}
+
+
+/*Устанавливаем параметры для меню навигации по сайту*/
+.site-navigation {
+    font-size: 17px;
+    line-height: 17px;
+    background-color: #32425c;
+    display: flex;
+    flex-direction: row;
+    min-height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+
+}
+
+.site-navigation a {
+    color: #fff;
+}
+.site-navigation a:hover {
+    background-color: #293449;   
+}
+
+.site-navigation-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+}
+
+
+.product-main-container li {
+    float: left;
+}
+
+.product-container {
+    position: relative;
+    width: 300px;
+    min-height: 123px;
+}
+
+.product-main-container li:nth-child(1) {
+    background-color: #ffbf47;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.product-main-container li:nth-child(2) {
+    background-color: #3bbce3;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.product-main-container li:nth-child(3) {
+    background-color: #dc91d8;
+    margin-bottom: 20px;
+}
+
+.product-slider {
+    width: 620px;
+    height: 266px;
+    margin-right: 20px;
+    background-image: url(../img/slider/slider-1.png);
+}
+
+.slider-name {
+    font-size: 36px;
+    font-weight: 700;
+    position: absolute;
+    color: #fff;
+    margin-top: 27px;
+    margin-left: 24px;
+}
+
+
+.slider-motto {
+    font-size: 18px;
+    font-weight: 400px;
+    position: absolute;
+    color: #fff;
+    margin-top: 35px;
+    margin-left: 25px;
+}
+
+.product-main-container li:nth-child(5) {
+    background-color: #8ed78f;
+    margin-bottom: 20px;
+}
+.product-main-container li:nth-child(6) {
+    background-color: #ffc047;
+}
+
+/*----------Задаём расположение иконок на кнопках каталога------*/
+.matherials-icon-container {
+    width: 44px;
+    height: 65px;
+    position: absolute;
+    top: 31px;
+    right: 43px;}
+.instruments-icon-container {
+    width: 75px;
+    height: 61px;
+    position: absolute;
+    right: 28px;
+    top: 33px;}
+.equipment-icon-container {
+    width: 78px;
+    height: 62px;
+    position: absolute;
+    right: 31px;
+    top: 31px;}
+.discounts-icon-container {
+    width: 59px;
+    height: 72px;
+    position: absolute;
+    right: 45px;
+    top: 26px;}
+.delivery-icon-container {
+    width: 78px;
+    height: 63px;
+    position: absolute;
+    right: 31px;
+    top: 32px;}
+/*----------------------------------------------------------------*/
+
+.test-container .item-wrp {
+    font-size: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.test-container .item-wrp:nth-child(1) {
+    width: 620px;
+    margin-right: 10px;
+}
+.test-container .item-wrp:nth-child(2) {
+    width: 300px; 
+    margin-left: 10px;
+}
+.test-container .item-wrp:nth-child(2) .item {
+    width: 100%;
+    margin-right: 0;
+}
+.test-container .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    height: 123px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.test-container .item-wrp:nth-child(1) .item:nth-child(2) {
+    margin-right: 0;
+}
+.test-container .item.big {
+    width: 100%;
+    background: red;
+    height: 266px;
+}
+.motto-container {
+    width: 196px;
+    height: 60px;
+    display: block;
+}
+
+.popular-category-header {
+
+}
+
+.user-menu-search {
+    margin-left: 220px;
+    display: inline-flex;
+}
+
+.user-menu h1 {
+    max-width: 220px;
+    position: absolute;
+    height: 47px;
+    margin: 0;
+    background-color: red;
+}
+
+.user-menu-bookmark a,
+.user-menu-basket a,
+.user-menu-order a {
+    color: white;
+}
+
+.main-search span {
+    font-size: 17px;
+    line-height: 18px;
+    color: #fff;
+}
+/* .product-main-container:nth-child(4) {
+    width: 620px;
+    height: 266px;
+    position: absolute;
+}
+
+.product-main-container:nth-child(1),
+.product-main-container:nth-child(2),
+.product-main-container:nth-child(3),
+.product-main-container:nth-child(5),
+.product-main-container:nth-child(6) {
+    width: 300px;
+    height: 123px;
+    display: inline-block;
+    position: absolute;
+} */
+
+.popular-manufacturers {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 940px;
+    padding: 0;
+    margin: auto;
+    justify-content: space-between;
+}
+.manufacturers-container {
+    display: inline-block;
+}
+.manufacturer {
+    width: 220px;
+    height: 145px;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid black;    
+}
+.popular-manufacturers li:nth-child(1) {
+    /* position: absolute; */
+    top: 20px;
+    right: 20px;
+    
+}
+
+
+/*Устанавливаем параметры для названий секций продуктов в основном теле сайта*/
+.products-section-name {
+    font-family: "Cuprum", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color:  #ffffff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 23px;
+    top: 26px;
+    padding: 0 5px;
+    margin: 5px;}
+
+/*Устанавливаем параметры для названий кнопок в основном теле сайта*/
+.products-section-button,
+.popular .button-name,
+.popular-manufacturers .button-name,
+.main-about-us .button-name,
+.main-contacts .button-name
+{
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    color: #ffffff;
+    position: absolute;}
+
+.matherials-button {
+    top: 75px;
+    left: 49px;
+    /*box-shadow: 0 0 135px 38px;*/}
+.instruments-button {
+    top: 77px;
+    left: 51px;}
+.equipment-button {
+    top: 75px;
+    left: 53px;}
+.discounts-button {
+    top: 77px;
+    left: 46px;}
+.delivery-button {
+    top: 77px;
+    left: 60px;}
+
+/*Выделяем ссылки при наведении и фокусировке*/
+.user-login a:hover,
+/* .site-navigation a:hover, */
+.catalogue-matherials a:hover,
+.catalogue-instruments a:hover,
+.catalogue-equipment a:hover,
+.catalogue-discounts a:hover,
+.catalogue-delivery a:hover,
+.category-name a:hover,
+.services a:hover,
+.main-contacts-text a:hover,
+.popular-manufacturers a:hover,
+.manufacturer a:hover,
+
+.user-login a:focus,
+/* .site-navigation a:focus, */
+.catalogue-matherials a:focus,
+.catalogue-instruments a:focus,
+.catalogue-equipment a:focus,
+.catalogue-discounts a:focus,
+.catalogue-delivery a:focus,
+.category-name a:focus,
+.popular a:focus,
+.services a:focus,
+.main-contacts-text a:focus,
+.popular-manufacturers a:focus,
+.manufacturer a:focus,
+
+/*Задаём параметры текста для названий секций и названий товаров*/
+.popular .category-name,
+.popular-manufacturers .category-name
+{
+    font-size: 30px;
+    text-align: left;
+    line-height: 30px;
+    color: #32425c;
+}
+
+.popular-item-name {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+    color:  #000000;
+}
+
+.old-price {
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    color:  #a9a9a9;
+    text-decoration:line-through;
+    position: absolute;
+    left: 77px; 
+    bottom:72px;
+}
+
+.now-price {
+    font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    text-align: center;
+    color:  #ffffff;
+}
+
+/*Задаём параметры текста для текстового блока Сервисы*/
+.services h3,
+.main-about-us h3,
+.main-contacts h3 {
+    font-size: 30px;
+    text-align: left;
+    line-height: 30px;
+    color: #000000;
+}
+
+.services p,
+.main-about-us p,
+.main-contacts p {
+    font-family: "PT Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+    color:  #000000;
+}
+
+.delivery-name {
+    font-size: 36px;
+    text-align: left;
+    line-height: 36px;
+    color: #32425c;
+}
+
+/*--При наведении на карточку популярного товара вместо его картинки появляются кнопки--*/
+.popular-item-buttons {
+    display: none;
+}
+
+.popular-item:hover img {
+    display: none;
+}
+
+.popular-item:hover .popular-item-buttons {
+    display: block;
+}
+/*----------------------------------------------------------------------------------------*/
+.popular-item {
+    border: solid 1px black;
+
+    width: 220px;
+    height: 318px;
+
+    position: relative;
+}
+
+.popular-button-container {
+    display:inline-block;   
+    position:relative;    
+}
+
+.popular-item-name {
+    position: absolute;
+    text-align: center;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.button-text {
+    display:block;
+    position:absolute;
+    left:auto;
+    bottom:auto;
+    width:100%;
+    box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+
+/*--------Оформляем внешний вид кнопок которые появляются вместо карточки товара----------*/
+.popular-buttons-buy {
+    background-color: #63a63e;
+    box-shadow: inset 0px -3px 0 0 var(--tree-green);
+    color: #ffffff;
+}
+.popular-buttons-add {
+  border: solid 3px #63a63e;
+  color: #32425c;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/*---------------------Оформляем внешний вид кнопок на карточке товара--------------------*/
+.popular-button-container{
+    display:inline-block;   
+    position:relative;
+}
+
+.now-price {
+    display:inline-block;
+    position:absolute;
+    width: 141px;
+    height: 18px;
+
+    margin-top: auto;   
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    background-image: url(../img/btn_1.png);
+    padding: 10px 0;
+
+    bottom: 21px;
+    left: 43px;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+.delivery-companys-text {
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+    color:  #000000;
+}
+
+.footer-contacts,
+.footer-menu-main {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color:  #f3f7f9; 
+}
+
+.footer-menu-catalogue {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color:  #ffd180;
+}
+
+.footer-trademark,
+.footer-feedback,
+.footer-copyright {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    color:  #ffffff;
+}
+
+.footer-feedback .button,
+.footer-copyright .button {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: left;
+    color:  #ffd180;
+}
+
+
+
+.popular-manufacturers .category-name,
+.popular .category-name
+ {
+    background-color: #f9f5f0;
+}
+
+.popular .category-button,
+.popular-manufacturers .category-button,
+.slider a {
+    background-color: #ee3643;
+}
+
+.popular a.category-button:hover,
+.popular-manufacturers a.category-button:hover,
+.slider a:hover {
+    background-color: #ca2c37;
+}
+
+.services {
+    background-color: #f4f7f9;
+}
+
+.main-about-us,
+.main-contacts,
+.popular-manufacturers,
+.popular-list {
+    background-color: #ffffff;
+}
+
+.main-footer {
+    background-color: #32425c;
+}
+
+.footer-trademark,
+.footer-social,
+.footer-feedback,
+.footer-copyright {
+    background-color: #293449;
+}
+
+
+/* .pn {
+    margin-right: 40px;
+} */
+/*------Разметим сетку документа--------*/
+
+.popular-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 940px;
+    padding: 0;
+    margin: auto;
+    justify-content: space-between;
+}
+
+
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    margin: -1px;
+}
